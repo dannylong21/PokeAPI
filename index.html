@@ -9,21 +9,30 @@
     
 </head>
 <body>
+    <!-- AUDIO FILES FOR JAVASCRIPT TO CONNECT -->
     <audio src="./spin-fail-295088.mp3" hidden id="error"></audio>
     <audio src="./notification-sound-269266.mp3" hidden id="success"></audio>
     <audio id='backgroundmusic'></audio>
     <!-- MAIN CONTENT -->
-<div class="searchArea">
+
+<div class="searchArea"> <!-- SEARCH BAR & SEARCH BUTTON -->
     <input id="searchbar" class="searchbar" type="text" placeholder="enter pokemon name here"></input>
-    <button onClick="searchIt()" class="searchbtn">Search Pokemon</button>
+    <button onClick="searchIt(), abilityjs()" class="searchbtn">Search Pokemon</button>
     </div>
+    <!-- END SEARCH AREA -->
+
+<!-- CARD BODY AREA -->
 <div class="card">
-    <div class="card-body">
+    <div class="card-body"> <!-- Header Area -->
         <h6 id="pokename"  class="pokename">Pokemon Name</h6>
         <audio controls id="audio"></audio>
         <h6 id="errorwindow" class="errorwindow" hidden>Error</h6>
         <img id="pokeimg" />
     </div>
+    <!-- END HEADER AREA -->
+
+<!-- BEGIN LOWER CARD BODY PORTION -->
+
     <div class="card-body">
         <h6 id="abilitiestxt">Ability:</h6>
         <h6 id="movestxt">Moves:</h6>

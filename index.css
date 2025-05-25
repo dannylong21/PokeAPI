@@ -30,7 +30,6 @@ body{
 .searchbar{
     text-align:center;
     font-size: 18px;
-    border: 1px blue solid;
 }
 
 .searchbar::placeholder{
